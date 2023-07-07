@@ -16,18 +16,6 @@ To run the app in Android or IOs:
 npm start
 ```
 
-To run the app in Android:
-
-```bash
-npm run android
-```
-
-To run the app in IOs:
-
-```bash
-npm run ios
-```
-
 To run the app Web:
 ```bash
 npm run web
