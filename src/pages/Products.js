@@ -1,14 +1,14 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 
-const indexado = () => {
+const Products = ({navigation}) => {
   return (
     <View>
-        <Text>
-            Indexado
-        </Text>
+      <Text>
+        Products
+      </Text>
     </View>
   )
 }
 
-export default indexado
+export default Products

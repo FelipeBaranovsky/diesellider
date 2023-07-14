@@ -1,29 +1,44 @@
 /* Header Component */
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { Link } from '@react-navigation/native';
+
 
 const Header = () => {
   return (
     <View style={styles.container}>
       <View style={styles.leftContainer}>
         {/* Coloca tu logotipo aquí */}
-        <Text style={styles.logo}>Logo</Text>
+        <Link to={{ screen: 'Home'}}>
+          <Text style={styles.logo}>Logo</Text>
+        </Link>
+        
       </View>
       <View style={styles.rightContainer}>
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Productos</Text>
+          <Link to={{ screen: 'Products'}}>
+              <Text style={styles.buttonText}>Productos</Text>
+          </Link>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Consultas</Text>
+          <Link to={{ screen: 'Querys'}}>
+                <Text style={styles.buttonText}>Consultas</Text>
+          </Link>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Servicios</Text>
+          <Link to={{ screen: 'Services'}}>
+              <Text style={styles.buttonText}>Servicios</Text>
+          </Link>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Contacto</Text>
+          <Link to={{ screen: 'Contact'}}>
+              <Text style={styles.buttonText}>Contacto</Text>
+          </Link>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Pedido</Text>
+          <Link to={{ screen: 'Order'}}>
+              <Text style={styles.buttonText}>Pedido</Text>
+          </Link>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Usuario</Text>

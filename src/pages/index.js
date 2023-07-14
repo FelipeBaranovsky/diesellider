@@ -1,13 +1,19 @@
 /* Web Home */
 import React, {useState} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Button} from 'react-native';
 import Header from '../components/header/Header.jsx';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Link } from '@react-navigation/native';
+
 
 const Home = () => {
+  
   return (
     <View style={styles.container}>
-      <Header/>
       <Text>Chau!</Text>
+      <Link to={{ screen: 'Profile'}}>
+          Go to Indexado
+      </Link>
     </View>
   )}
 
