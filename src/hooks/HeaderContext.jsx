@@ -4,6 +4,7 @@ const HeaderContext = React.createContext([{}, ()=>{}])
 const HeaderProvider = (props) => {
     const [modal, setModal] = useState(false)
     const [actualPage, setActualPage] = useState("Login")
+    const [isLandscape, setIsLandscape] = useState(false)
     
     //Abrir-Cerrar Usuario
     const handleModal = () => {
